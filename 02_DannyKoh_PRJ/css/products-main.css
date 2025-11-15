@@ -1,0 +1,240 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:20px 8%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;	
+}
+
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 1px;
+	margin-right: 50px;
+}
+
+nav ul li:hover a{
+	color: #00c6ff;
+  transition: 0.3s;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;	
+}
+
+/* Dropdown menu base */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+/* Individual dropdown items */
+.dropdown-menu li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center
+}
+
+/* Hover effects */
+.dropdown-menu li a:hover {
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  color: #000;
+  border-radius: 8px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: dropdownFade 0.3s ease;
+}
+
+
+.navbar{
+	background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  position: fixed;  /* fixed like homepage */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%; /* increase top-bottom padding to match homepage */
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.navbar h1 a{
+	text-decoration: none;
+  color: white;
+  font-size: 3rem; 
+  margin-left: 50px;
+}
+
+.navbar ul li a{
+	font-size: 17px
+}
+/* FOOTER */
+.footer {
+  background: rgba(0,0,0,0.9);
+  color: #ccc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer h2 {
+  color: #00c6ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #00c6ff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00c6ff;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #aaa;
+}
+
+
+.products-slider {
+  padding: 150px 20px 150px; 
+  background: radial-gradient(circle at 20% 20%, rgba(0,17,255,0.1), transparent 70%),
+              radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1), transparent 70%),
+              #111;
+	
+}
+
+.featured-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #00c6ff, #0071e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Slider container with peek */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 50px;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+}
+
+.slider::-webkit-scrollbar {
+  height: 12px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #00c6ff;
+  border-radius: 6px;
+}
+
+.product {
+  flex: 0 0 350px; /* bigger cards */
+  scroll-snap-align: start;
+  text-align: center;
+  background: rgba(255,255,255,0.07);
+  padding: 35px 25px;
+  border-radius: 25px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+	margin-top: 30px;
+	margin-left: 10px
+}
+
+.product:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,170,255,0.3);
+  border: 1px solid #00aaff;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.product h2 {
+  color: #00c6ff;
+  margin-top: 15px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.product p {
+  color: #ccc;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  color: white;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+	text-decoration: none
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,198,255,0.3);
+  color: #000;
+	text-decoration: none
+}
+
+

@@ -1,0 +1,320 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:20px 8%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;	
+}
+
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 1px;
+	margin-right: 50px;
+}
+
+nav ul li:hover a{
+	color: #00c6ff;
+  transition: 0.3s;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;	
+}
+
+/* Dropdown menu base */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+/* Individual dropdown items */
+.dropdown-menu li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center
+}
+
+/* Hover effects */
+.dropdown-menu li a:hover {
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  color: #000;
+  border-radius: 8px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: dropdownFade 0.3s ease;
+}
+
+
+.navbar{
+	background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+	z-index: 1000;
+}
+
+.navbar h1 a{
+	margin-left: 50px;
+	text-decoration: none;
+	color: white
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* Main container */
+.checkout-container {
+  padding: 150px 10%;
+}
+
+/* Page title */
+.checkout-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Checkout box layout */
+.checkout-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left side form */
+.customer-info {
+  width: 60%;
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.customer-info h2 {
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.customer-info label {
+  display: block;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.customer-info input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: white;
+}
+
+/* Right side order summary */
+.order-summary {
+  width: 40%;
+  background: rgba(0,0,0,0.45);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.order-summary h2 {
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+/* Product preview */
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-item img {
+  width: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+}
+
+.price {
+  color: #00c6ff;
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.ship {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.place-order-btn {
+  display: inline-block;       
+  text-align: center;          
+  text-decoration: none;       
+  cursor: pointer;             
+  width: 100%;                 
+  padding: 15px;               
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
+}
+
+.payment-option {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #00c6ff; /* modern colored radio buttons */
+}
+
+
+
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.thankyou-box {
+  background: rgba(0,0,0,0.6);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.thankyou-box h1 {
+  font-size: 3rem;
+  color: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.thankyou-box p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.back-home-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #0071e3, #00c6ff);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-home-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
+}
+
+
+
+.footer {
+  background: rgba(0,0,0,0.9);
+  color: #ccc;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer h2 {
+  color: #00c6ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #00c6ff;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #00c6ff;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #aaa;
+}
